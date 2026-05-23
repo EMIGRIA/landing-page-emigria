@@ -11,6 +11,8 @@
     - Each card includes high-fidelity HTML/CSS mockups, category pills, title, description, and interactive links.
 */
 
+import { useEffect } from 'react';
+
 interface CardProps {
   bg: string;
   badgeBg: string;
@@ -152,6 +154,23 @@ function MissionCard({ bg, badgeBg, badgeColor, badgeText, title, desc, linkText
 }
 
 export default function CTASection() {
+  useEffect(() => {
+    const els = document.querySelectorAll('.misi-fade-in');
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            (entry.target as HTMLElement).classList.add('misi-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12 }
+    );
+    els.forEach((el) => observer.observe(el));
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section
       id="pelajari"
@@ -180,7 +199,10 @@ export default function CTASection() {
 
       <div className="container" style={{ position: 'relative', zIndex: 1 }}>
         {/* Header */}
-        <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
+        <div
+          className="misi-fade-in"
+          style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}
+        >
           <div className="eyebrow" style={{ marginBottom: 16, color: 'var(--color-brand-green-dark)' }}>
             MISI KAMI
           </div>
@@ -210,6 +232,7 @@ export default function CTASection() {
           className="misi-cards-grid"
         >
           {/* Card 1: Loker Palsu & Bodong (The Problem - Forest Green Variation) */}
+          <div className="misi-fade-in" style={{ transitionDelay: '0ms' }}>
           <MissionCard
             bg="var(--misi-card-1-bg)"
             badgeBg="rgba(0, 104, 74, 0.08)"
@@ -353,8 +376,10 @@ export default function CTASection() {
               </div>
             }
           />
+          </div>
 
           {/* Card 2: Pemindaian AI Cerdas (The AI Solution - Mint/Leaf Green Variation) */}
+          <div className="misi-fade-in" style={{ transitionDelay: '120ms' }}>
           <MissionCard
             bg="var(--misi-card-2-bg)"
             badgeBg="rgba(0, 237, 100, 0.12)"
@@ -431,8 +456,10 @@ export default function CTASection() {
               </div>
             }
           />
+          </div>
 
           {/* Card 3: Perjalanan Kerja Legal (The Verified Impact - Finpay Teal Green Variation) */}
+          <div className="misi-fade-in" style={{ transitionDelay: '240ms' }}>
           <MissionCard
             bg="var(--misi-card-3-bg)"
             badgeBg="rgba(13, 122, 110, 0.08)"
@@ -493,6 +520,7 @@ export default function CTASection() {
               </div>
             }
           />
+          </div>
         </div>
       </div>
 
@@ -517,6 +545,17 @@ export default function CTASection() {
           --misi-mockup-border-1: rgba(0, 104, 74, 0.25);
           --misi-mockup-border-2: rgba(0, 237, 100, 0.12);
           --misi-mockup-border-3: rgba(13, 122, 110, 0.25);
+        }
+
+        /* Scroll Fade-In */
+        .misi-fade-in {
+          opacity: 0;
+          transform: translateY(32px);
+          transition: opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1), transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .misi-fade-in.misi-visible {
+          opacity: 1;
+          transform: translateY(0);
         }
 
         /* Hover micro-animations on cards */

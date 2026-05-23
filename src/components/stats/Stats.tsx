@@ -23,6 +23,7 @@ export default function Stats() {
       <div className="container">
         {/* Header — centered, framed by a dashed border */}
         <div
+          className="reveal"
           style={{
             border: dashBorder,
             borderRadius: 12,
@@ -76,11 +77,11 @@ export default function Stats() {
           {steps.map((step, i) => (
             <div
               key={i}
+              className={`step-cell reveal delay-${(i + 1) as 1 | 2 | 3}`}
               style={{
                 padding: '0 24px',
                 borderLeft: i > 0 ? hairline : 'none',
               }}
-              className="step-cell"
             >
               {/* Icon in green-tinted circle */}
               <div

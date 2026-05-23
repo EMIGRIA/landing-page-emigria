@@ -6,7 +6,7 @@ export default function Features() {
     <section id="pelanggan" className="section-pad" style={{ background: 'var(--color-surface-soft)', padding: '80px 0' }}>
       <div className="container">
         {/* Header */}
-        <div style={{ textAlign: 'center', marginBottom: 40 }}>
+        <div style={{ textAlign: 'center', marginBottom: 40 }} className="reveal">
           <div className="eyebrow" style={{ marginBottom: 14 }}>MENGAPA EMIGRIA</div>
           <h2 className="section-heading">
             Mengapa PMI memilih<br />Emigria
@@ -32,7 +32,7 @@ export default function Features() {
             justifyContent: 'space-between',
             minHeight: 220,
             border: '1px solid var(--color-hairline)',
-          }}>
+          }} className="reveal delay-1">
             <div>
               <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: 1, textTransform: 'uppercase', color: 'var(--color-stone)', marginBottom: 12 }}>
                 Prediksi Model
@@ -77,7 +77,7 @@ export default function Features() {
             justifyContent: 'space-between',
             minHeight: 220,
             border: '1px solid var(--color-hairline)',
-          }}>
+          }} className="reveal delay-2">
             <div>
               <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: 1, textTransform: 'uppercase', color: 'var(--color-stone)', marginBottom: 12 }}>
                 Reality Check

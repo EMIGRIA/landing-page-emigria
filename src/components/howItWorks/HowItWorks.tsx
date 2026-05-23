@@ -27,7 +27,7 @@ export default function HowItWorks() {
             padding: '64px 64px 60px',
             boxShadow: '0 12px 40px rgba(0, 30, 43, 0.06), 0 2px 8px rgba(0, 30, 43, 0.04)',
           }}
-          className="proteksi-card"
+          className="proteksi-card reveal"
         >
           {/* Top: eyebrow + heading LEFT | description RIGHT */}
           <div
@@ -73,7 +73,7 @@ export default function HowItWorks() {
             className="proteksi-3-grid"
           >
             {features.map((f, i) => (
-              <div key={i}>
+              <div key={i} className={`reveal delay-${(i + 1) as 1 | 2 | 3}`}>
                 <div style={{ marginBottom: 20 }}>{f.icon}</div>
                 <h3
                   style={{

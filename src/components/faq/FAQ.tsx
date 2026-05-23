@@ -31,7 +31,7 @@ export default function FAQ() {
           className="faq-grid"
         >
           {/* LEFT */}
-          <div style={{ position: 'sticky', top: 100 }} className="faq-left">
+          <div style={{ position: 'sticky', top: 100 }} className="faq-left reveal reveal-left">
             <div className="eyebrow" style={{ marginBottom: 16 }}>FAQ</div>
             <h2 className="section-heading" style={{ marginBottom: 20 }}>
               Pertanyaan yang<br />
@@ -55,6 +55,7 @@ export default function FAQ() {
 
           {/* RIGHT — accordion */}
           <div
+            className="reveal delay-2"
             style={{
               background: 'var(--color-canvas)',
               border: '1px solid var(--color-hairline)',
