@@ -211,7 +211,7 @@ export default function CTASection() {
         >
           {/* Card 1: Loker Palsu & Bodong (The Problem - Forest Green Variation) */}
           <MissionCard
-            bg="#f0f7f3"
+            bg="var(--misi-card-1-bg)"
             badgeBg="rgba(0, 104, 74, 0.08)"
             badgeColor="#00684a"
             badgeText="Darurat Penipuan"
@@ -222,10 +222,10 @@ export default function CTASection() {
             mockup={
               <div
                 style={{
-                  background: '#fff',
+                  background: 'var(--misi-mockup-bg)',
                   borderRadius: 16,
                   padding: 8,
-                  border: '1px solid rgba(0, 104, 74, 0.15)',
+                  border: '1px solid var(--misi-mockup-border-1)',
                   boxShadow: '0 8px 24px rgba(0, 104, 74, 0.04)',
                   width: '100%',
                   height: 116,
@@ -356,7 +356,7 @@ export default function CTASection() {
 
           {/* Card 2: Pemindaian AI Cerdas (The AI Solution - Mint/Leaf Green Variation) */}
           <MissionCard
-            bg="#e6f9ed"
+            bg="var(--misi-card-2-bg)"
             badgeBg="rgba(0, 237, 100, 0.12)"
             badgeColor="#00a35c"
             badgeText="Kecerdasan Buatan"
@@ -367,10 +367,10 @@ export default function CTASection() {
             mockup={
               <div
                 style={{
-                  background: '#fff',
+                  background: 'var(--misi-mockup-bg)',
                   borderRadius: 16,
                   padding: 8,
-                  border: '1px solid rgba(0, 237, 100, 0.15)',
+                  border: '1px solid var(--misi-mockup-border-2)',
                   boxShadow: '0 8px 24px rgba(0, 237, 100, 0.04)',
                   width: '100%',
                   height: 116,
@@ -434,7 +434,7 @@ export default function CTASection() {
 
           {/* Card 3: Perjalanan Kerja Legal (The Verified Impact - Finpay Teal Green Variation) */}
           <MissionCard
-            bg="#eef7f6"
+            bg="var(--misi-card-3-bg)"
             badgeBg="rgba(13, 122, 110, 0.08)"
             badgeColor="var(--color-cta)"
             badgeText="Terverifikasi BP2MI"
@@ -445,10 +445,10 @@ export default function CTASection() {
             mockup={
               <div
                 style={{
-                  background: '#fff',
+                  background: 'var(--misi-mockup-bg)',
                   borderRadius: 16,
                   padding: 8,
-                  border: '1px solid rgba(13, 122, 110, 0.15)',
+                  border: '1px solid var(--misi-mockup-border-3)',
                   boxShadow: '0 8px 24px rgba(13, 122, 110, 0.04)',
                   width: '100%',
                   height: 116,
@@ -497,6 +497,28 @@ export default function CTASection() {
       </div>
 
       <style>{`
+        /* Light mode defaults */
+        :root {
+          --misi-card-1-bg: #f0f7f3;
+          --misi-card-2-bg: #e6f9ed;
+          --misi-card-3-bg: #eef7f6;
+          --misi-mockup-bg: #ffffff;
+          --misi-mockup-border-1: rgba(0, 104, 74, 0.15);
+          --misi-mockup-border-2: rgba(0, 237, 100, 0.15);
+          --misi-mockup-border-3: rgba(13, 122, 110, 0.15);
+        }
+
+        /* Dark mode overrides */
+        [data-theme="dark"] {
+          --misi-card-1-bg: #0f2118;
+          --misi-card-2-bg: #0b1e13;
+          --misi-card-3-bg: #0c1e1c;
+          --misi-mockup-bg: #0d2318;
+          --misi-mockup-border-1: rgba(0, 104, 74, 0.25);
+          --misi-mockup-border-2: rgba(0, 237, 100, 0.12);
+          --misi-mockup-border-3: rgba(13, 122, 110, 0.25);
+        }
+
         /* Hover micro-animations on cards */
         .misi-card:hover {
           transform: translateY(-6px);
