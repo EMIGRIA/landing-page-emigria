@@ -46,7 +46,7 @@ export default function Hero() {
       <div className="container" style={{ position: 'relative', zIndex: 1 }}>
         <div style={{
           display: 'grid',
-          gridTemplateColumns: '1fr 1.12fr',
+          gridTemplateColumns: '1.3fr 1fr',
           gap: 48,
           alignItems: 'center',
           width: '100%',
@@ -85,15 +85,15 @@ export default function Hero() {
 
             {/* Heading */}
             <h1 style={{
-              fontSize: 'clamp(40px, 5vw, 56px)',
+              fontSize: 'clamp(32px, 3.8vw, 46px)',
               fontWeight: 800,
-              lineHeight: 1.08,
-              letterSpacing: -2.5,
+              lineHeight: 1.15,
+              letterSpacing: -1.8,
               color: 'var(--color-ink)',
               marginBottom: 12,
             }}>
-              Cek Loker Palsu.<br />
-              <span style={{ color: 'var(--color-brand-green-dark)' }}>Dengan Emigria.</span>
+              <span className="hero-title-line">Cek Keaslian Loker Luar Negeri.</span><br />
+              <span style={{ color: 'var(--color-brand-green-dark)' }}>Untuk Pekerja Migran</span>
             </h1>
 
             {/* Description */}
@@ -410,6 +410,15 @@ export default function Hero() {
 
       <style>{`
         /* --- Desktop & Base Styles --- */
+        .hero-title-line {
+          display: inline;
+        }
+        @media (min-width: 992px) {
+          .hero-title-line {
+            white-space: nowrap;
+          }
+        }
+
         .show-on-mobile {
           display: none !important;
         }

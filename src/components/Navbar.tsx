@@ -81,20 +81,18 @@ export default function Navbar() {
           <div className={`nav-container-pill ${scrolled ? 'scrolled' : ''}`}>
             {/* Logo */}
             <a href="#" style={{ display: 'flex', alignItems: 'center', gap: 8, flexShrink: 0 }}>
-              <div style={{
-                width: 28,
-                height: 28,
-                borderRadius: 7,
-                background: 'var(--color-cta)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-              }}>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                </svg>
-              </div>
-              <span style={{ fontWeight: 800, fontSize: 15, color: 'var(--color-ink)', letterSpacing: -0.3 }}>
+              <img 
+                src="/logo emigria.png" 
+                alt="Emigria Icon" 
+                style={{ 
+                  height: 32, 
+                  width: 'auto', 
+                  objectFit: 'contain',
+                  display: 'block',
+                  borderRadius: 6
+                }} 
+              />
+              <span style={{ fontWeight: 800, fontSize: 16, color: 'var(--color-ink)', letterSpacing: -0.3 }}>
                 Emigria
               </span>
             </a>
