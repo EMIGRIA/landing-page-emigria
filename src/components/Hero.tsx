@@ -92,8 +92,8 @@ export default function Hero() {
               color: 'var(--color-ink)',
               marginBottom: 12,
             }}>
-              <span className="hero-title-line">Cek Keaslian Loker Luar Negeri.</span><br />
-              <span style={{ color: 'var(--color-brand-green-dark)' }}>Untuk Pekerja Migran</span>
+              <span className="hero-title-line">Verifikasi Loker Luar Negeri.</span><br />
+              <span style={{ color: 'var(--color-brand-green-dark)' }}>Solusi Aman Bersama Emigria.</span>
             </h1>
 
             {/* Description */}
