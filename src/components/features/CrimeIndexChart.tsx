@@ -78,7 +78,7 @@ export function CrimeIndexChart() {
         mode: 'index',
         intersect: false,
         callbacks: {
-          label: (ctx) => ` Crime Index: ${ctx.parsed.y.toFixed(2)}`,
+          label: (ctx) => ` Crime Index: ${(ctx.parsed.y ?? 0).toFixed(2)}`,
         },
       },
     },
