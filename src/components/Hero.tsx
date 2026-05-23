@@ -92,8 +92,8 @@ export default function Hero() {
               color: 'var(--color-ink)',
               marginBottom: 12,
             }}>
-              Cek Loker Aman.<br />
-              <span style={{ color: 'var(--color-brand-green-dark)' }}>AI yang Melindungi.</span>
+              Cek Loker Palsu.<br />
+              <span style={{ color: 'var(--color-brand-green-dark)' }}>Dengan Emigria.</span>
             </h1>
 
             {/* Description */}
