@@ -56,7 +56,7 @@ export default function HowItWorks() {
                   lineHeight: 1.7,
                 }}
               >
-                Emigria menggunakan sistem AI dua lapis — Gemini 1.5 Flash untuk ekstraksi
+                Emigria menggunakan sistem AI dua lapis — Gemini 2.5 Flash untuk ekstraksi
                 visual dan model deep learning custom — untuk mendeteksi penipuan yang sering
                 terlewat oleh manusia, dalam hitungan detik.
               </p>

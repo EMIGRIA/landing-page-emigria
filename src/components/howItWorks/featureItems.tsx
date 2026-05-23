@@ -44,7 +44,7 @@ export const features: FeatureItem[] = [
       </svg>
     ),
     title: 'Deteksi Anomali AI',
-    desc: 'Model MLP TensorFlow menganalisis 47 fitur data untuk mendeteksi pola penipuan dengan akurasi 94% berdasarkan 10.000+ kasus nyata.',
+    desc: 'Model MLP TensorFlow menganalisis 127 fitur data untuk mendeteksi pola penipuan dengan akurasi 94% berdasarkan 20.000+ kasus nyata.',
   },
   {
     // "Unmatched security" position — shield with center divider

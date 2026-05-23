@@ -27,9 +27,10 @@ export default function Navbar() {
   }, [menuOpen]);
 
   const links = [
-    { label: 'Produk', href: '#produk' },
-    { label: 'Pelanggan', href: '#pelanggan' },
-    { label: 'Harga', href: '#harga' },
+    { label: 'Cara Kerja', href: '#produk' },
+    { label: 'Fitur', href: '#pelanggan' },
+    { label: 'Langkah', href: '#harga' },
+    { label: 'Misi Kami', href: '#pelajari' },
     { label: 'FAQ', href: '#faq' },
   ];
 
@@ -53,15 +54,15 @@ export default function Navbar() {
     >
       {dark ? (
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <circle cx="12" cy="12" r="5"/>
-          <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
-          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-          <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
-          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          <circle cx="12" cy="12" r="5" />
+          <line x1="12" y1="1" x2="12" y2="3" /><line x1="12" y1="21" x2="12" y2="23" />
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" /><line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+          <line x1="1" y1="12" x2="3" y2="12" /><line x1="21" y1="12" x2="23" y2="12" />
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" /><line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
         </svg>
       ) : (
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--color-ink)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
         </svg>
       )}
     </button>
@@ -77,23 +78,7 @@ export default function Navbar() {
         padding: '12px 0',
       }}>
         <div className="container">
-        <div style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            height: 60,
-            background: scrolled ? 'rgba(255,255,255,0.45)' : 'var(--color-canvas)',
-            backdropFilter: scrolled ? 'blur(20px)' : 'none',
-            WebkitBackdropFilter: scrolled ? 'blur(20px)' : 'none',
-            border: scrolled ? '1px solid rgba(255,255,255,0.3)' : '1px solid var(--color-hairline)',
-            borderRadius: 'var(--rounded-full)',
-            padding: '0 8px 0 16px',
-            boxShadow: scrolled
-              ? '0 4px 20px rgba(0,0,0,0.10)'
-              : '0 1px 4px rgba(0,0,0,0.06)',
-            transition: 'box-shadow 0.25s ease, background 0.3s ease',
-            position: 'relative',
-          }}>
+          <div className={`nav-container-pill ${scrolled ? 'scrolled' : ''}`}>
             {/* Logo */}
             <a href="#" style={{ display: 'flex', alignItems: 'center', gap: 8, flexShrink: 0 }}>
               <div style={{
@@ -106,7 +91,7 @@ export default function Navbar() {
                 justifyContent: 'center',
               }}>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
                 </svg>
               </div>
               <span style={{ fontWeight: 800, fontSize: 15, color: 'var(--color-ink)', letterSpacing: -0.3 }}>
@@ -121,28 +106,19 @@ export default function Navbar() {
               transform: 'translateX(-50%)',
               display: 'flex',
               alignItems: 'center',
-              gap: 2,
+              gap: 4,
             }} className="nav-links-desktop">
               {links.map(item => (
                 <a
                   key={item.label}
                   href={item.href}
+                  className="nav-link-item"
                   style={{
-                    padding: '6px 14px',
+                    padding: '8px 16px',
                     fontSize: 13,
-                    fontWeight: 500,
-                    color: 'var(--color-steel)',
-                    borderRadius: 'var(--rounded-full)',
-                    transition: 'all 0.15s ease',
+                    fontWeight: 600,
                     whiteSpace: 'nowrap',
-                  }}
-                  onMouseEnter={e => {
-                    (e.currentTarget as HTMLAnchorElement).style.color = 'var(--color-ink)';
-                    (e.currentTarget as HTMLAnchorElement).style.background = 'var(--color-surface-soft)';
-                  }}
-                  onMouseLeave={e => {
-                    (e.currentTarget as HTMLAnchorElement).style.color = 'var(--color-steel)';
-                    (e.currentTarget as HTMLAnchorElement).style.background = 'transparent';
+                    position: 'relative',
                   }}
                 >
                   {item.label}
@@ -260,16 +236,15 @@ export default function Navbar() {
                 key={item.label}
                 href={item.href}
                 onClick={() => setMenuOpen(false)}
+                className="nav-link-item-mobile"
                 style={{
                   padding: '12px 16px',
                   fontSize: 15,
                   fontWeight: 600,
-                  color: 'var(--color-ink)',
                   borderRadius: 10,
-                  transition: 'background 0.15s ease',
+                  position: 'relative',
+                  display: 'block',
                 }}
-                onMouseEnter={e => (e.currentTarget.style.background = 'var(--color-surface-soft)')}
-                onMouseLeave={e => (e.currentTarget.style.background = 'transparent')}
               >
                 {item.label}
               </a>
@@ -298,6 +273,99 @@ export default function Navbar() {
       </div>
 
       <style>{`
+        .nav-container-pill {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          height: 60px;
+          border-radius: var(--rounded-full);
+          padding: 0 8px 0 16px;
+          position: relative;
+          
+          /* Default state (not scrolled) */
+          background: var(--color-canvas);
+          border: 1px solid var(--color-hairline);
+          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+          transition: background 0.3s ease, border 0.3s ease, box-shadow 0.3s ease, backdrop-filter 0.3s ease;
+        }
+
+        /* Light mode scrolled state */
+        .nav-container-pill.scrolled {
+          background: rgba(255, 255, 255, 0.55) !important;
+          backdrop-filter: blur(20px);
+          -webkit-backdrop-filter: blur(20px);
+          border: 1px solid rgba(255, 255, 255, 0.3) !important;
+          box-shadow: 0 10px 30px rgba(0, 30, 43, 0.06) !important;
+        }
+
+        /* Dark mode scrolled state */
+        [data-theme="dark"] .nav-container-pill.scrolled {
+          background: rgba(15, 30, 40, 0.55) !important;
+          backdrop-filter: blur(20px);
+          -webkit-backdrop-filter: blur(20px);
+          border: 1px solid rgba(255, 255, 255, 0.08) !important;
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35) !important;
+        }
+
+        .nav-link-item {
+          color: var(--color-steel);
+          border-radius: var(--rounded-full);
+          transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+          text-decoration: none;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .nav-link-item::after {
+          content: '';
+          position: absolute;
+          bottom: 5px;
+          left: 50%;
+          width: 0;
+          height: 2px;
+          background-color: var(--color-brand-green-mid);
+          border-radius: 99px;
+          transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+          transform: translateX(-50%);
+        }
+
+        .nav-link-item:hover {
+          color: var(--color-brand-green-dark) !important;
+          background-color: var(--color-brand-green-soft) !important;
+        }
+
+        .nav-link-item:hover::after {
+          width: 30%;
+        }
+
+        .nav-link-item-mobile {
+          color: var(--color-ink) !important;
+          transition: all 0.2s ease;
+          text-decoration: none;
+        }
+
+        .nav-link-item-mobile::after {
+          content: '';
+          position: absolute;
+          bottom: 8px;
+          left: 16px;
+          width: 0;
+          height: 2.5px;
+          background-color: var(--color-brand-green-mid);
+          border-radius: 99px;
+          transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .nav-link-item-mobile:hover {
+          color: var(--color-brand-green-dark) !important;
+          background-color: var(--color-brand-green-soft) !important;
+        }
+
+        .nav-link-item-mobile:hover::after {
+          width: 24px;
+        }
+
         @media (max-width: 700px) {
           .nav-links-desktop { display: none !important; }
           .nav-cta-btn { display: none !important; }

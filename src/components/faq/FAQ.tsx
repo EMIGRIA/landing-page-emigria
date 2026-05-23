@@ -50,22 +50,7 @@ export default function FAQ() {
               Ada pertanyaan lain? Hubungi tim kami.
             </p>
 
-            <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
-              <a
-                href="#hero"
-                className="btn btn-cta"
-                style={{ fontSize: 13, padding: '11px 22px' }}
-              >
-                Coba Sekarang
-              </a>
-              <a
-                href="mailto:hi@emigria.id"
-                className="btn btn-outline"
-                style={{ fontSize: 13, padding: '11px 22px' }}
-              >
-                Hubungi Kami
-              </a>
-            </div>
+
           </div>
 
           {/* RIGHT — accordion */}

@@ -121,23 +121,19 @@ export default function Stats() {
                 {step.desc}
               </p>
 
-              <a
-                href="#hero"
+              <div
                 style={{
-                  fontSize: 13,
-                  fontWeight: 600,
+                  fontSize: 12,
+                  fontWeight: 700,
                   color: 'var(--color-brand-green)',
                   display: 'inline-flex',
                   alignItems: 'center',
-                  gap: 6,
+                  letterSpacing: '0.05em',
+                  textTransform: 'uppercase',
                 }}
               >
-                Pelajari lebih
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                  <line x1="5" y1="12" x2="19" y2="12" />
-                  <polyline points="12 5 19 12 12 19" />
-                </svg>
-              </a>
+                Langkah 0{i + 1}
+              </div>
             </div>
           ))}
         </div>

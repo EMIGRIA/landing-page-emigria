@@ -89,7 +89,7 @@ export default function Features() {
                 lineHeight: 1.4,
                 marginBottom: 20,
               }}>
-                Perbandingan dengan<br />loker resmi BP2MI
+                Perbandingan dengan<br />loker resmi SISKOP2MI
               </div>
             </div>
 
@@ -97,7 +97,7 @@ export default function Features() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
               {[
                 { label: 'Gaji sesuai standar', match: true },
-                { label: 'Agen terdaftar BP2MI', match: false },
+                { label: 'Agen terdaftar SISKOP2MI', match: false },
                 { label: 'Kontrak kerja valid', match: false },
               ].map(item => (
                 <div key={item.label} style={{

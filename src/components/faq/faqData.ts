@@ -18,11 +18,11 @@ export const faqs: FaqItem[] = [
   },
   {
     q: 'Format apa saja yang bisa dianalisis?',
-    a: 'Emigria mendukung gambar JPG/PNG dari screenshot WhatsApp atau media sosial, file PDF brosur lowongan, serta URL langsung ke halaman loker. Ukuran maksimum 10MB per file.',
+    a: 'Emigria mendukung gambar JPG/PNG dari screenshot WhatsApp atau media sosial, teks langsung lewat clipboard, serta URL langsung ke halaman loker. Ukuran maksimum 5MB per file.',
   },
   {
-    q: 'Apa yang dimaksud dengan validasi BP2MI?',
-    a: 'BP2MI memiliki database resmi agen penempatan, perusahaan mitra, dan standar gaji per sektor. Emigria melakukan cross-check otomatis antara data hasil ekstraksi brosur dengan database tersebut.',
+    q: 'Apa yang dimaksud dengan validasi SISKOP2MI?',
+    a: 'SISKOP2MI adalah sistem informasi resmi yang dikelola oleh Badan Pelindungan Pekerja Migran Indonesia (BP2MI). Emigria melakukan cross-check otomatis antara data hasil ekstraksi brosur dengan database resmi agen penempatan, perusahaan mitra, dan standar gaji per sektor.',
   },
   {
     q: 'Bagaimana cara membagikan hasil deteksi ke keluarga?',

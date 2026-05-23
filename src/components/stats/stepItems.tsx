@@ -14,7 +14,7 @@ export const steps: StepItem[] = [
       </svg>
     ),
     title: 'Upload brosur',
-    desc: 'Unggah gambar dari WhatsApp atau tempel URL loker. Mendukung JPG, PNG, PDF, dan link web.',
+    desc: 'Unggah gambar dari WhatsApp atau tempel URL loker. Mendukung format JPG, PNG, JPEG, link web dan Teks mentah lewat Clipboard',
   },
   {
     icon: (
@@ -24,7 +24,7 @@ export const steps: StepItem[] = [
       </svg>
     ),
     title: 'AI analisis otomatis',
-    desc: 'Gemini 1.5 Flash dan model MLP TensorFlow memproses semua data dalam hitungan detik tanpa aksi manual.',
+    desc: 'Gemini 2.5 Flash dan model MLP TensorFlow memproses semua data dalam hitungan detik tanpa aksi manual.',
   },
   {
     icon: (
