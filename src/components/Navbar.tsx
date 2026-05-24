@@ -82,14 +82,13 @@ export default function Navbar() {
             {/* Logo */}
             <a href="#" style={{ display: 'flex', alignItems: 'center', gap: 8, flexShrink: 0 }}>
               <img 
-                src="/logo emigria.png" 
+                src="/logo emigria v2 tight.png" 
                 alt="Emigria Icon" 
                 style={{ 
-                  height: 32, 
+                  height: 35, 
                   width: 'auto', 
                   objectFit: 'contain',
                   display: 'block',
-                  borderRadius: 6
                 }} 
               />
               <span style={{ fontWeight: 800, fontSize: 16, color: 'var(--color-ink)', letterSpacing: -0.3 }}>
