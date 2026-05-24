@@ -57,7 +57,7 @@ export default function Footer() {
         left: '-10%',
         width: 350,
         height: 350,
-        background: 'radial-gradient(circle, rgba(0, 237, 100, 0.08) 0%, transparent 70%)',
+        background: 'radial-gradient(circle, rgba(var(--color-brand-green-rgb), 0.10) 0%, transparent 70%)',
         filter: 'blur(50px)',
         zIndex: 0,
         pointerEvents: 'none',
@@ -68,7 +68,7 @@ export default function Footer() {
         right: '-10%',
         width: 350,
         height: 350,
-        background: 'radial-gradient(circle, rgba(13, 122, 110, 0.08) 0%, transparent 70%)',
+        background: 'radial-gradient(circle, rgba(var(--color-brand-green-rgb), 0.08) 0%, transparent 70%)',
         filter: 'blur(50px)',
         zIndex: 0,
         pointerEvents: 'none',
@@ -107,7 +107,7 @@ export default function Footer() {
                   width: 20,
                   height: 20,
                   borderRadius: '50%',
-                  background: 'rgba(0, 237, 100, 0.15)',
+                  background: 'rgba(var(--color-brand-green-rgb), 0.15)',
                   color: 'var(--color-brand-green)',
                   display: 'flex',
                   alignItems: 'center',
@@ -125,7 +125,7 @@ export default function Footer() {
                   width: 20,
                   height: 20,
                   borderRadius: '50%',
-                  background: 'rgba(0, 237, 100, 0.15)',
+                  background: 'rgba(var(--color-brand-green-rgb), 0.15)',
                   color: 'var(--color-brand-green)',
                   display: 'flex',
                   alignItems: 'center',
@@ -287,7 +287,7 @@ export default function Footer() {
         }
         .footer-cta-btn:hover {
           transform: translateY(-2px);
-          box-shadow: 0 8px 24px rgba(0, 237, 100, 0.2) !important;
+          box-shadow: 0 8px 24px rgba(var(--color-brand-green-rgb), 0.22) !important;
           background-color: var(--color-brand-green) !important;
           color: var(--color-brand-teal-deep) !important;
         }

@@ -48,21 +48,21 @@ export function CrimeIndexChart() {
       {
         data: d.values,
         fill: true,
-        borderColor: '#0d7a6e',
+        borderColor: '#0e8038',
         borderWidth: 2.5,
         backgroundColor: (ctx: { chart: ChartJS }) => {
           const gradient = ctx.chart.ctx.createLinearGradient(0, 0, 0, 130);
-          gradient.addColorStop(0, 'rgba(13,122,110,0.22)');
-          gradient.addColorStop(1, 'rgba(13,122,110,0.01)');
+          gradient.addColorStop(0, 'rgba(14,128,56,0.22)');
+          gradient.addColorStop(1, 'rgba(14,128,56,0.01)');
           return gradient;
         },
         tension: 0.45,
         pointRadius: 4,
-        pointBackgroundColor: '#0d7a6e',
+        pointBackgroundColor: '#0e8038',
         pointBorderColor: '#fff',
         pointBorderWidth: 2,
         pointHoverRadius: 6,
-        pointHoverBackgroundColor: '#0d7a6e',
+        pointHoverBackgroundColor: '#0e8038',
         pointHoverBorderColor: '#fff',
         pointHoverBorderWidth: 2,
       },
@@ -86,7 +86,7 @@ export function CrimeIndexChart() {
       x: {
         grid: { display: false },
         border: { display: false },
-        ticks: { font: { size: 11, weight: 600 }, color: '#5c6c7a' },
+        ticks: { font: { size: 11, weight: 600 }, color: '#5a6c7a' },
       },
       y: {
         display: false,
@@ -99,14 +99,15 @@ export function CrimeIndexChart() {
 
   return (
     <div style={{
-      background: 'var(--color-surface)',
+      background: 'var(--features-card-bg, var(--color-surface))',
       borderRadius: 20,
       padding: '36px 40px',
       display: 'grid',
       gridTemplateColumns: '220px 1fr',
       gap: 40,
       alignItems: 'center',
-      border: '1px solid var(--color-hairline)',
+      border: '1px solid var(--features-border, var(--color-hairline))',
+      boxShadow: 'var(--features-card-shadow, var(--shadow-1))',
     }} className="bento-bottom crime-chart-card">
       {/* Left text */}
       <div>
@@ -183,7 +184,7 @@ export function CrimeIndexChart() {
                 border: '1px solid var(--color-hairline-strong)',
                 borderRadius: 'var(--rounded-full)',
                 padding: '5px 12px',
-                background: 'var(--color-canvas)',
+                background: 'var(--features-row-bg, var(--color-canvas))',
                 cursor: 'pointer',
                 display: 'flex',
                 alignItems: 'center',
@@ -204,8 +205,8 @@ export function CrimeIndexChart() {
                 position: 'absolute',
                 top: 'calc(100% + 6px)',
                 right: 0,
-                background: 'var(--color-canvas)',
-                border: '1px solid var(--color-hairline)',
+                background: 'var(--features-card-bg, var(--color-canvas))',
+                border: '1px solid var(--features-border, var(--color-hairline))',
                 borderRadius: 10,
                 boxShadow: '0 8px 24px rgba(0,30,43,0.10)',
                 zIndex: 10,

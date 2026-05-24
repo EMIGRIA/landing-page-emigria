@@ -1,41 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 
 /* ============================================================
-   EMIGRIA — Design System (MongoDB DESIGN.md tokens)
+   EMIGRIA - Scanner/result aligned color system
    ============================================================ */
 :root {
-  --color-brand-green: #00ed64;
-  --color-brand-green-dark: #00684a;
-  --color-brand-green-mid: #00a35c;
+  --color-brand-green: #0e8038;
+  --color-brand-green-dark: #0e8038;
+  --color-brand-green-mid: #0e8038;
   --color-brand-green-soft: #c3f0d2;
+  --color-brand-green-rgb: 14, 128, 56;
   --color-brand-teal-deep: #001e2b;
-  --color-brand-teal: #003d4f;
-  --color-brand-teal-mid: #00684a;
-  --color-accent-purple: #7b3ff2;
-  --color-accent-orange: #fa6e39;
-  --color-canvas: #ffffff;
+  --color-brand-teal: #0a2633;
+  --color-brand-teal-mid: #2c3e4a;
+  --color-accent-purple: #635bff;
+  --color-accent-orange: #e86f3d;
+  --color-canvas: #f0f2f4;
+  --color-canvas-rgb: 240, 242, 244;
   --color-canvas-dark: #001e2b;
-  --color-surface: #f9fbfa;
-  --color-surface-soft: #f4f7f6;
-  --color-surface-feature: #e3fcef;
-  --color-hairline: #e1e5e8;
-  --color-hairline-soft: #eceff1;
-  --color-hairline-strong: #c1ccd6;
+  --color-surface: #ffffff;
+  --color-surface-soft: #e4e8ec;
+  --color-surface-feature: #dff3e6;
+  --color-hairline: #c5cdd4;
+  --color-hairline-soft: #d7dde3;
+  --color-hairline-strong: #b2bcc5;
   --color-ink: #001e2b;
   --color-charcoal: #1c2d38;
-  --color-slate: #3d4f5b;
-  --color-steel: #5c6c7a;
-  --color-stone: #7c8c9a;
-  --color-muted: #a8b3bc;
+  --color-slate: #2c3e4a;
+  --color-steel: #5a6c7a;
+  --color-stone: #6f7f8b;
+  --color-muted: #8d9aa5;
   --color-on-dark: #ffffff;
   --color-on-dark-muted: #a8b3bc;
   --color-on-primary: #001e2b;
   --color-warning-bg: #fff8e0;
 
-  /* Finpay-style teal CTA (fits within DESIGN.md teal family) */
-  --color-cta: #0d7a6e;
-  --color-cta-hover: #0a6359;
-  --color-hero-bg: #edf7f5;
+  --color-cta: #0e8038;
+  --color-cta-hover: #0b6f30;
+  --color-hero-bg: #f0f2f4;
 
   --space-xxs: 4px;
   --space-xs: 8px;
@@ -78,30 +79,32 @@ html {
 
 /* ============================================================
    DARK MODE — [data-theme="dark"] on <html>
-   All surfaces flip to dark teal family from DESIGN.md
    ============================================================ */
 [data-theme="dark"] {
-  --color-canvas: #0f1e28;
+  --color-canvas: #001e2b;
+  --color-canvas-rgb: 0, 30, 43;
   --color-canvas-dark: #001e2b;
-  --color-surface: #162330;
-  --color-surface-soft: #1a2a38;
-  --color-surface-feature: #0e2a1e;
-  --color-hero-bg: #0f1e28;
-  --color-hairline: #243d50;
-  --color-hairline-soft: #1e3345;
-  --color-hairline-strong: #2e4d64;
-  --color-ink: #e2edf5;
-  --color-charcoal: #c0d4e2;
-  --color-slate: #8aafc8;
-  --color-steel: #6a90aa;
-  --color-stone: #4e7090;
-  --color-muted: #2e5070;
+  --color-surface: #0a2633;
+  --color-surface-soft: #061f2b;
+  --color-surface-feature: #0b3321;
+  --color-hero-bg: #001e2b;
+  --color-hairline: #1c2d38;
+  --color-hairline-soft: #203544;
+  --color-hairline-strong: #304654;
+  --color-ink: #ffffff;
+  --color-charcoal: #dce6ec;
+  --color-slate: #a8b3bc;
+  --color-steel: #a8b3bc;
+  --color-stone: #7d8c96;
+  --color-muted: #5c6c7a;
   --color-warning-bg: #1a1500;
-  --color-cta: #0d9e8a;
-  --color-cta-hover: #0b8a78;
-  --color-brand-green-dark: #00c87a;
-  --color-brand-green-soft: #0d2e22;
-  --color-brand-green: #00ed64;
+  --color-cta: #00cb55;
+  --color-cta-hover: #0ee36a;
+  --color-brand-green-dark: #00cb55;
+  --color-brand-green-soft: #0b3b25;
+  --color-brand-green: #00cb55;
+  --color-brand-green-mid: #00cb55;
+  --color-brand-green-rgb: 0, 203, 85;
   --shadow-1: 0 1px 3px rgba(0,0,0,0.4);
   --shadow-2: 0 4px 12px rgba(0,0,0,0.4);
   --shadow-3: 0 12px 40px rgba(0,0,0,0.5);

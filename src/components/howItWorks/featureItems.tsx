@@ -51,7 +51,7 @@ export const features: FeatureItem[] = [
     icon: (
       <svg width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="var(--color-cta)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         {/* shield outline */}
-        <path d="M24 6 L40 12 V24 C40 33 33 40 24 42 C15 40 8 33 8 24 V12 Z" fill="rgba(13,122,110,0.08)" />
+        <path d="M24 6 L40 12 V24 C40 33 33 40 24 42 C15 40 8 33 8 24 V12 Z" fill="rgba(var(--color-brand-green-rgb), 0.08)" />
         {/* center divider — the half-fill effect */}
         <line x1="24" y1="6" x2="24" y2="42" />
       </svg>

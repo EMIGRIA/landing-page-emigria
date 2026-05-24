@@ -190,7 +190,7 @@ export default function CTASection() {
           right: '-5%',
           width: 400,
           height: 400,
-          background: 'radial-gradient(circle, rgba(0, 237, 100, 0.03) 0%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(var(--color-brand-green-rgb), 0.06) 0%, transparent 70%)',
           filter: 'blur(60px)',
           zIndex: 0,
           pointerEvents: 'none',
@@ -235,8 +235,8 @@ export default function CTASection() {
           <div className="misi-fade-in" style={{ transitionDelay: '0ms' }}>
           <MissionCard
             bg="var(--misi-card-1-bg)"
-            badgeBg="rgba(0, 104, 74, 0.08)"
-            badgeColor="#00684a"
+            badgeBg="rgba(var(--color-brand-green-rgb), 0.08)"
+            badgeColor="var(--color-brand-green-dark)"
             badgeText="Darurat Penipuan"
             title="Loker Palsu & Bodong"
             desc="Banyak calon PMI tertipu loker luar negeri bodong bergaji fantastis. Emigria memutus eksploitasi ini secara instan: tanpa login, cukup unggah brosur, tempel teks, atau tautkan URL untuk analisis cepat."
@@ -249,7 +249,7 @@ export default function CTASection() {
                   borderRadius: 16,
                   padding: 8,
                   border: '1px solid var(--misi-mockup-border-1)',
-                  boxShadow: '0 8px 24px rgba(0, 104, 74, 0.04)',
+                  boxShadow: '0 8px 24px rgba(var(--color-brand-green-rgb), 0.04)',
                   width: '100%',
                   height: 116,
                   display: 'flex',
@@ -262,21 +262,21 @@ export default function CTASection() {
                   display: 'grid',
                   gridTemplateColumns: '1fr 1fr 1fr',
                   gap: 4,
-                  background: 'rgba(0, 104, 74, 0.04)',
+                  background: 'rgba(var(--color-brand-green-rgb), 0.04)',
                   padding: 2,
                   borderRadius: 8,
-                  border: '1px solid rgba(0, 104, 74, 0.06)',
+                  border: '1px solid rgba(var(--color-brand-green-rgb), 0.08)',
                 }}>
                   {/* Tab 1 Active */}
                   <div style={{
                     background: '#fff',
-                    color: '#00684a',
+                    color: 'var(--color-brand-green-dark)',
                     fontSize: 8,
                     fontWeight: 700,
                     padding: '3px 2px',
                     borderRadius: 6,
                     textAlign: 'center',
-                    border: '1px solid rgba(0, 104, 74, 0.1)',
+                    border: '1px solid rgba(var(--color-brand-green-rgb), 0.12)',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -330,8 +330,8 @@ export default function CTASection() {
 
                 {/* Dropzone Area */}
                 <div style={{
-                  border: '1px dashed rgba(0, 104, 74, 0.25)',
-                  background: 'rgba(0, 104, 74, 0.01)',
+                  border: '1px dashed rgba(var(--color-brand-green-rgb), 0.25)',
+                  background: 'rgba(var(--color-brand-green-rgb), 0.02)',
                   borderRadius: 10,
                   padding: '6px 8px',
                   display: 'flex',
@@ -340,7 +340,7 @@ export default function CTASection() {
                   justifyContent: 'center',
                   gap: 2,
                 }}>
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#00684a" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--color-brand-green-dark)" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M21.2 15c.7-1.2 1-2.5.7-3.9-.3-2-1.9-3.6-3.9-3.9C16.9 3.5 13 1 9 2.2 5.8 3.2 3.4 6 3 9.2c-.3 2.1.4 4.1 1.8 5.6" />
                     <polyline points="16 16 12 12 8 16" />
                   </svg>
@@ -354,7 +354,7 @@ export default function CTASection() {
 
                 {/* Submit Button */}
                 <div style={{
-                  background: '#00684a',
+                  background: 'var(--color-brand-green-dark)',
                   color: '#fff',
                   fontSize: 8.5,
                   fontWeight: 700,
@@ -365,7 +365,7 @@ export default function CTASection() {
                   alignItems: 'center',
                   justifyContent: 'center',
                   gap: 4,
-                  boxShadow: '0 2px 6px rgba(0, 104, 74, 0.1)',
+                  boxShadow: '0 2px 6px rgba(var(--color-brand-green-rgb), 0.12)',
                 }}>
                   Analisis Sekarang
                   <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
@@ -382,8 +382,8 @@ export default function CTASection() {
           <div className="misi-fade-in" style={{ transitionDelay: '120ms' }}>
           <MissionCard
             bg="var(--misi-card-2-bg)"
-            badgeBg="rgba(0, 237, 100, 0.12)"
-            badgeColor="#00a35c"
+            badgeBg="rgba(var(--color-brand-green-rgb), 0.12)"
+            badgeColor="var(--color-brand-green-mid)"
             badgeText="Kecerdasan Buatan"
             title="Pemindaian Brosur Cerdas"
             desc="Ditenagai TensorFlow Deep Learning dengan arsitektur MLP, AI Emigria memindai kontrak, visa, dan brosur lowongan dalam 5 detik untuk mendeteksi indikasi penipuan secara cepat dan akurat."
@@ -396,7 +396,7 @@ export default function CTASection() {
                   borderRadius: 16,
                   padding: 8,
                   border: '1px solid var(--misi-mockup-border-2)',
-                  boxShadow: '0 8px 24px rgba(0, 237, 100, 0.04)',
+                  boxShadow: '0 8px 24px rgba(var(--color-brand-green-rgb), 0.04)',
                   width: '100%',
                   height: 116,
                   display: 'flex',
@@ -406,7 +406,7 @@ export default function CTASection() {
               >
                 {/* Mockup Header */}
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                  <span style={{ fontSize: 9, fontWeight: 700, color: '#00a35c', background: 'rgba(0,237,100,0.1)', padding: '2px 8px', borderRadius: 4 }}>EMIGRIA SCANNER</span>
+                  <span style={{ fontSize: 9, fontWeight: 700, color: 'var(--color-brand-green-mid)', background: 'rgba(var(--color-brand-green-rgb), 0.10)', padding: '2px 8px', borderRadius: 4 }}>EMIGRIA SCANNER</span>
                   <span style={{ fontSize: 9, fontWeight: 700, color: 'var(--color-brand-green-mid)', display: 'flex', alignItems: 'center', gap: 3 }}>
                     <span style={{ width: 4, height: 4, borderRadius: '50%', background: 'var(--color-brand-green-mid)', display: 'inline-block' }} className="scanning-pulse" />
                     Analisis Selesai
@@ -415,8 +415,8 @@ export default function CTASection() {
 
                 {/* Risk Score Area */}
                 <div style={{
-                  border: '1px solid rgba(0, 237, 100, 0.08)',
-                  background: 'rgba(0, 237, 100, 0.01)',
+                  border: '1px solid rgba(var(--color-brand-green-rgb), 0.10)',
+                  background: 'rgba(var(--color-brand-green-rgb), 0.02)',
                   borderRadius: 10,
                   padding: '6px 8px',
                   display: 'flex',
@@ -425,7 +425,7 @@ export default function CTASection() {
                 }}>
                   <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontSize: 9, color: 'var(--color-ink)', fontWeight: 700 }}>
                     <span>Probabilitas Loker Bodong</span>
-                    <span style={{ color: '#00684a', fontWeight: 800 }}>87%</span>
+                    <span style={{ color: 'var(--color-brand-green-dark)', fontWeight: 800 }}>87%</span>
                   </div>
                   <div style={{ height: 5, background: 'var(--color-hairline)', borderRadius: 3, overflow: 'hidden' }}>
                     <div style={{ width: '87%', height: '100%', background: 'linear-gradient(90deg, var(--color-brand-green-mid), var(--color-brand-green-dark))', borderRadius: 3 }} />
@@ -434,8 +434,8 @@ export default function CTASection() {
 
                 {/* High/Low Risk Status Pill */}
                 <div style={{
-                  background: 'rgba(0, 104, 74, 0.05)',
-                  border: '1px dashed #00684a',
+                  background: 'rgba(var(--color-brand-green-rgb), 0.07)',
+                  border: '1px dashed var(--color-brand-green-dark)',
                   borderRadius: 8,
                   padding: '6px 10px',
                   display: 'flex',
@@ -444,7 +444,7 @@ export default function CTASection() {
                   gap: 4,
                   fontSize: 9,
                   fontWeight: 700,
-                  color: '#00684a',
+                  color: 'var(--color-brand-green-dark)',
                 }}>
                   <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
                     <polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86" />
@@ -462,7 +462,7 @@ export default function CTASection() {
           <div className="misi-fade-in" style={{ transitionDelay: '240ms' }}>
           <MissionCard
             bg="var(--misi-card-3-bg)"
-            badgeBg="rgba(13, 122, 110, 0.08)"
+            badgeBg="rgba(var(--color-brand-green-rgb), 0.08)"
             badgeColor="var(--color-cta)"
             badgeText="Terverifikasi BP2MI"
             title="Perjalanan Kerja Legal"
@@ -476,7 +476,7 @@ export default function CTASection() {
                   borderRadius: 16,
                   padding: 8,
                   border: '1px solid var(--misi-mockup-border-3)',
-                  boxShadow: '0 8px 24px rgba(13, 122, 110, 0.04)',
+                  boxShadow: '0 8px 24px rgba(var(--color-brand-green-rgb), 0.04)',
                   width: '100%',
                   height: 116,
                   display: 'flex',
@@ -486,7 +486,7 @@ export default function CTASection() {
               >
                 {/* Mockup Header */}
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                  <span style={{ fontSize: 9, fontWeight: 700, color: 'var(--color-cta)', background: 'rgba(13,122,110,0.1)', padding: '2px 8px', borderRadius: 4 }}>ID JOB: BP2MI-894</span>
+                  <span style={{ fontSize: 9, fontWeight: 700, color: 'var(--color-cta)', background: 'rgba(var(--color-brand-green-rgb), 0.10)', padding: '2px 8px', borderRadius: 4 }}>ID JOB: BP2MI-894</span>
                   <span style={{ fontSize: 9, fontWeight: 700, color: 'var(--color-brand-green-mid)', display: 'flex', alignItems: 'center', gap: 3 }}>
                     <span style={{ width: 4, height: 4, borderRadius: '50%', background: 'var(--color-brand-green)', display: 'inline-block' }} />
                     Valid
@@ -500,7 +500,7 @@ export default function CTASection() {
 
                 {/* Bottom Status Pill */}
                 <div style={{
-                  background: 'rgba(0, 237, 100, 0.05)',
+                  background: 'rgba(var(--color-brand-green-rgb), 0.06)',
                   border: '1px dashed var(--color-brand-green-mid)',
                   borderRadius: 8,
                   padding: '6px 10px',
@@ -527,24 +527,24 @@ export default function CTASection() {
       <style>{`
         /* Light mode defaults */
         :root {
-          --misi-card-1-bg: #f0f7f3;
-          --misi-card-2-bg: #e6f9ed;
-          --misi-card-3-bg: #eef7f6;
+          --misi-card-1-bg: #e4e8ec;
+          --misi-card-2-bg: #dff3e6;
+          --misi-card-3-bg: #eef3f0;
           --misi-mockup-bg: #ffffff;
-          --misi-mockup-border-1: rgba(0, 104, 74, 0.15);
-          --misi-mockup-border-2: rgba(0, 237, 100, 0.15);
-          --misi-mockup-border-3: rgba(13, 122, 110, 0.15);
+          --misi-mockup-border-1: rgba(var(--color-brand-green-rgb), 0.16);
+          --misi-mockup-border-2: rgba(var(--color-brand-green-rgb), 0.18);
+          --misi-mockup-border-3: rgba(var(--color-brand-green-rgb), 0.14);
         }
 
         /* Dark mode overrides */
         [data-theme="dark"] {
-          --misi-card-1-bg: #0f2118;
-          --misi-card-2-bg: #0b1e13;
-          --misi-card-3-bg: #0c1e1c;
-          --misi-mockup-bg: #0d2318;
-          --misi-mockup-border-1: rgba(0, 104, 74, 0.25);
-          --misi-mockup-border-2: rgba(0, 237, 100, 0.12);
-          --misi-mockup-border-3: rgba(13, 122, 110, 0.25);
+          --misi-card-1-bg: #0a2633;
+          --misi-card-2-bg: #0b3321;
+          --misi-card-3-bg: #062431;
+          --misi-mockup-bg: #001e2b;
+          --misi-mockup-border-1: rgba(var(--color-brand-green-rgb), 0.22);
+          --misi-mockup-border-2: rgba(var(--color-brand-green-rgb), 0.18);
+          --misi-mockup-border-3: rgba(var(--color-brand-green-rgb), 0.20);
         }
 
         /* Scroll Fade-In */
@@ -607,4 +607,3 @@ export default function CTASection() {
     </section>
   );
 }
-

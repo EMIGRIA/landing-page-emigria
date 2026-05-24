@@ -89,7 +89,7 @@ export default function Stats() {
                   width: 44,
                   height: 44,
                   borderRadius: '50%',
-                  background: 'rgba(0, 237, 100, 0.12)',
+                  background: 'rgba(var(--color-brand-green-rgb), 0.12)',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',

@@ -288,19 +288,19 @@ export default function Navbar() {
 
         /* Light mode scrolled state */
         .nav-container-pill.scrolled {
-          background: rgba(255, 255, 255, 0.55) !important;
+          background: rgba(var(--color-canvas-rgb), 0.72) !important;
           backdrop-filter: blur(20px);
           -webkit-backdrop-filter: blur(20px);
-          border: 1px solid rgba(255, 255, 255, 0.3) !important;
+          border: 1px solid rgba(var(--color-brand-green-rgb), 0.12) !important;
           box-shadow: 0 10px 30px rgba(0, 30, 43, 0.06) !important;
         }
 
         /* Dark mode scrolled state */
         [data-theme="dark"] .nav-container-pill.scrolled {
-          background: rgba(15, 30, 40, 0.55) !important;
+          background: rgba(var(--color-canvas-rgb), 0.72) !important;
           backdrop-filter: blur(20px);
           -webkit-backdrop-filter: blur(20px);
-          border: 1px solid rgba(255, 255, 255, 0.08) !important;
+          border: 1px solid rgba(var(--color-brand-green-rgb), 0.14) !important;
           box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35) !important;
         }
 

@@ -24,14 +24,15 @@ export default function Features() {
 
           {/* Card 1 — Prediksi Model AI */}
           <div style={{
-            background: 'var(--color-surface)',
+            background: 'var(--features-card-bg)',
             borderRadius: 20,
             padding: '36px 32px',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'space-between',
             minHeight: 220,
-            border: '1px solid var(--color-hairline)',
+            border: '1px solid var(--features-border)',
+            boxShadow: 'var(--features-card-shadow)',
           }} className="reveal delay-1">
             <div>
               <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: 1, textTransform: 'uppercase', color: 'var(--color-stone)', marginBottom: 12 }}>
@@ -57,10 +58,10 @@ export default function Features() {
                 <span style={{ fontSize: 12, fontWeight: 600, color: 'var(--color-ink)' }}>Probabilitas Penipuan</span>
                 <span style={{ fontSize: 12, fontWeight: 700, color: 'var(--color-cta)' }}>94%</span>
               </div>
-              <div style={{ height: 6, background: 'rgba(13,122,110,0.15)', borderRadius: 99 }}>
+              <div style={{ height: 6, background: 'rgba(var(--color-brand-green-rgb), 0.10)', borderRadius: 99 }}>
                 <div style={{ width: '94%', height: '100%', background: 'var(--color-cta)', borderRadius: 99 }} />
               </div>
-              <div style={{ marginTop: 10, display: 'inline-flex', alignItems: 'center', gap: 6, background: 'rgba(13,122,110,0.12)', borderRadius: 99, padding: '4px 12px' }}>
+              <div style={{ marginTop: 10, display: 'inline-flex', alignItems: 'center', gap: 6, background: 'rgba(var(--color-brand-green-rgb), 0.08)', borderRadius: 99, padding: '4px 12px' }}>
                 <div style={{ width: 7, height: 7, borderRadius: '50%', background: 'var(--color-cta)' }} />
                 <span style={{ fontSize: 12, fontWeight: 700, color: 'var(--color-cta)' }}>TERINDIKASI PENIPUAN</span>
               </div>
@@ -69,14 +70,15 @@ export default function Features() {
 
           {/* Card 2 — Reality Check */}
           <div style={{
-            background: 'var(--color-surface)',
+            background: 'var(--features-card-bg)',
             borderRadius: 20,
             padding: '36px 32px',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'space-between',
             minHeight: 220,
-            border: '1px solid var(--color-hairline)',
+            border: '1px solid var(--features-border)',
+            boxShadow: 'var(--features-card-shadow)',
           }} className="reveal delay-2">
             <div>
               <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: 1, textTransform: 'uppercase', color: 'var(--color-stone)', marginBottom: 12 }}>
@@ -104,10 +106,10 @@ export default function Features() {
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'space-between',
-                  background: 'var(--color-surface-feature)',
+                  background: 'var(--features-row-bg)',
                   borderRadius: 10,
                   padding: '9px 14px',
-                  border: '1px solid var(--color-hairline-soft)',
+                  border: '1px solid var(--features-border)',
                 }}>
                   <span style={{ fontSize: 13, color: 'var(--color-ink)', fontWeight: 500 }}>{item.label}</span>
                   <div style={{
@@ -140,6 +142,20 @@ export default function Features() {
         <CrimeIndexChart />      </div>
 
       <style>{`
+        :root {
+          --features-card-bg: #f7f9f7;
+          --features-row-bg: #edf6f0;
+          --features-border: rgba(var(--color-brand-green-rgb), 0.075);
+          --features-card-shadow: 0 8px 22px rgba(0, 30, 43, 0.025);
+        }
+
+        [data-theme="dark"] {
+          --features-card-bg: #082430;
+          --features-row-bg: #0a2f22;
+          --features-border: rgba(var(--color-brand-green-rgb), 0.12);
+          --features-card-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+        }
+
         @media (max-width: 900px) {
           .crime-chart-card {
             grid-template-columns: 1fr !important;
