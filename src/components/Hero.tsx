@@ -334,7 +334,7 @@ export default function Hero() {
                     width: 36,
                     height: 36,
                     borderRadius: 10,
-                    background: 'rgba(var(--color-brand-green-rgb), 0.08)',
+                    background: 'rgba(var(--color-brand-green-rgb), 0.10)',
                     color: 'var(--color-brand-green-dark)',
                     display: 'flex',
                     alignItems: 'center',
@@ -470,13 +470,19 @@ export default function Hero() {
         }
 
         .hero-stat-card {
-          background: var(--color-surface);
-          border: 1px solid var(--color-hairline);
+          background: rgba(var(--color-brand-green-rgb), 0.055);
+          border: 1px solid rgba(var(--color-brand-green-rgb), 0.12);
           border-radius: 24px;
           padding: 16px 20px;
           display: flex;
-          box-shadow: var(--shadow-1);
+          box-shadow: 0 12px 28px rgba(0, 30, 43, 0.04);
           transition: all 0.3s ease;
+        }
+
+        [data-theme="dark"] .hero-stat-card {
+          background: rgba(var(--color-brand-green-rgb), 0.08);
+          border-color: rgba(var(--color-brand-green-rgb), 0.16);
+          box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
         }
 
         .hero-stat-card-left {

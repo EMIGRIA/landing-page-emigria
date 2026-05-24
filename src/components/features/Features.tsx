@@ -143,7 +143,7 @@ export default function Features() {
 
       <style>{`
         :root {
-          --features-card-bg: #f7f9f7;
+          --features-card-bg: #f1f7f3;
           --features-row-bg: #edf6f0;
           --features-border: rgba(var(--color-brand-green-rgb), 0.075);
           --features-card-shadow: 0 8px 22px rgba(0, 30, 43, 0.025);

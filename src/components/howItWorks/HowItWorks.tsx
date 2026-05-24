@@ -22,10 +22,11 @@ export default function HowItWorks() {
         {/* Outer rounded white card with soft shadow */}
         <div
           style={{
-            background: 'var(--color-canvas)',
+            background: 'var(--proteksi-card-bg)',
             borderRadius: 24,
             padding: '64px 64px 60px',
-            boxShadow: '0 12px 40px rgba(0, 30, 43, 0.06), 0 2px 8px rgba(0, 30, 43, 0.04)',
+            border: '1px solid var(--proteksi-card-border)',
+            boxShadow: 'var(--proteksi-card-shadow)',
           }}
           className="proteksi-card reveal"
         >
@@ -96,6 +97,18 @@ export default function HowItWorks() {
       </div>
 
       <style>{`
+        :root {
+          --proteksi-card-bg: #f1f7f3;
+          --proteksi-card-border: rgba(var(--color-brand-green-rgb), 0.10);
+          --proteksi-card-shadow: 0 14px 30px rgba(0, 30, 43, 0.025);
+        }
+
+        [data-theme="dark"] {
+          --proteksi-card-bg: #082430;
+          --proteksi-card-border: rgba(var(--color-brand-green-rgb), 0.12);
+          --proteksi-card-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+        }
+
         @media (max-width: 900px) {
           .proteksi-card { padding: 40px 32px !important; }
           .proteksi-top-grid {
