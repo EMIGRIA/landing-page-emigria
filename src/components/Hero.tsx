@@ -219,16 +219,13 @@ export default function Hero() {
                 padding: '8px',
               }}>
                 <img
-                  src="/hero.png"
+                  src="/hero-v2-transparent.png"
                   alt="Emigria AI Scanner Illustration"
                   className="animate-float hero-dashboard-mockup"
                   style={{
                     width: '100%',
                     maxHeight: 380,
                     objectFit: 'contain',
-                    borderRadius: 20,
-                    border: '1px solid var(--color-hairline)',
-                    boxShadow: '0 20px 40px rgba(0, 30, 43, 0.08)',
                     transition: 'all 0.3s ease',
                   }}
                 />
@@ -651,11 +648,6 @@ export default function Hero() {
           }
         }
 
-        /* Dark mode card mockup override */
-        [data-theme="dark"] .hero-dashboard-mockup {
-          border: 1px solid rgba(255, 255, 255, 0.12) !important;
-          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4) !important;
-        }
       `}</style>
     </section>
   );
