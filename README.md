@@ -2,7 +2,7 @@
 
 Landing page resmi Emigria, platform deteksi penipuan lowongan kerja luar negeri berbasis AI untuk Pekerja Migran Indonesia (PMI).
 
-<a href="https://landing-page-emigria.vercel.app/">
+<a href="https://www.emigria.my.id/">
   <img src="https://img.shields.io/badge/Live-Aplikasi-Emigria4CAF50?style=for-the-badge" alt="Live Demo"/>
 </a>
 ---
