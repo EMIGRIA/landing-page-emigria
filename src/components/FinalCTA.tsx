@@ -1,3 +1,5 @@
+import { JOB_CHECKER_URL } from '../constants';
+
 /*
   Finpay "Ready to level up" CTA Banner
   → Emigria: dark rounded card + 2 buttons (teal filled + outline arrow)
@@ -62,7 +64,7 @@ export default function FinalCTA() {
             flexShrink: 0,
           }}>
             <a
-              href="#hero"
+              href={JOB_CHECKER_URL}
               className="btn btn-cta"
               style={{ fontSize: 14, padding: '13px 26px', whiteSpace: 'nowrap' }}
             >

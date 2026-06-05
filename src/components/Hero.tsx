@@ -1,3 +1,5 @@
+import { JOB_CHECKER_URL } from '../constants';
+
 /*
   Emigria Hero — split side-by-side layout matching reference mockup exactly:
     - Left column: Pill badge, Headline, Description, Pill CTA button, 3 Checklist Rows
@@ -180,7 +182,7 @@ export default function Hero() {
             </div>
 
             {/* CTA Button */}
-            <button className="btn btn-dark hide-on-mobile" style={{
+            <a href={JOB_CHECKER_URL} className="btn btn-dark hide-on-mobile" style={{
               padding: '12px 32px',
               fontSize: 15,
               fontWeight: 700,
@@ -192,7 +194,7 @@ export default function Hero() {
               boxShadow: 'var(--shadow-2)',
             }}>
               Cek Loker Sekarang
-            </button>
+            </a>
 
           </div>
 
@@ -233,7 +235,7 @@ export default function Hero() {
             </div>
 
             {/* Mobile-only CTA Button (placed below image on mobile) */}
-            <button className="btn btn-dark show-on-mobile" style={{
+            <a href={JOB_CHECKER_URL} className="btn btn-dark show-on-mobile" style={{
               padding: '12px 32px',
               fontSize: 15,
               fontWeight: 700,
@@ -245,7 +247,7 @@ export default function Hero() {
               boxShadow: 'var(--shadow-2)',
             }}>
               Cek Loker Sekarang
-            </button>
+            </a>
 
             {/* Mobile-only Checklist (placed below CTA Button on mobile) */}
             <div className="hero-checklist-container show-on-mobile" style={{ marginTop: 24, marginBottom: 8 }}>

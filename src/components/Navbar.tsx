@@ -5,6 +5,7 @@
 */
 
 import { useState, useEffect } from 'react';
+import { JOB_CHECKER_URL } from '../constants';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -129,7 +130,7 @@ export default function Navbar() {
 
               {/* CTA — desktop only */}
               <a
-                href="#hero"
+                href={JOB_CHECKER_URL}
                 className="nav-cta-btn"
                 style={{
                   padding: '8px 18px',
@@ -250,7 +251,7 @@ export default function Navbar() {
 
           <div style={{ marginTop: 24 }}>
             <a
-              href="#hero"
+              href={JOB_CHECKER_URL}
               onClick={() => setMenuOpen(false)}
               style={{
                 display: 'block',

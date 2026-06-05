@@ -1,3 +1,5 @@
+import { JOB_CHECKER_URL } from '../constants';
+
 /*
   Emigria Footer — Premium Dark Teal Flat Design matching mockup layout:
     - Background: var(--color-brand-teal-deep)
@@ -157,7 +159,7 @@ export default function Footer() {
               Dengan meningkatkan deteksi penipuan secara dini menggunakan kecerdasan buatan, Emigria membantu Pekerja Migran Indonesia melangkah dengan aman dan tenang.
             </p>
             <a 
-              href="#hero"
+              href={JOB_CHECKER_URL}
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
