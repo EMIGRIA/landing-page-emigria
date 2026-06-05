@@ -1,75 +1,46 @@
-# React + TypeScript + Vite
+# Emigria — Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing page resmi Emigria, platform deteksi penipuan lowongan kerja luar negeri berbasis AI untuk Pekerja Migran Indonesia (PMI).
 
-Currently, two official plugins are available:
+<a href="https://landing-page-emigria.vercel.app/">
+  <img src="https://img.shields.io/badge/Live-Aplikasi-Emigria4CAF50?style=for-the-badge" alt="Live Demo"/>
+</a>
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tentang Halaman Ini
 
-## React Compiler
+Halaman ini berfungsi sebagai pintu masuk utama platform Emigria. Memuat statistik penipuan loker nyata, penjelasan sistem AI, gambaran fitur utama, dan FAQ — semua dirancang untuk membangun kepercayaan pengguna sebelum menggunakan fitur pemindaian.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+## Fitur yang Ditampilkan
 
-## Expanding the ESLint configuration
+- **Fraud Score** — Deteksi indikasi penipuan berbasis model MLP TensorFlow dengan skor risiko Low/High
+- **Reality Check** — Perbandingan gaji yang ditawarkan vs standar gaji riil negara tujuan
+- **Geographic Risk Analyzer** — Informasi crime index, peringkat kriminalitas regional/global, dan tren tahunan negara tujuan
+- **Integrasi BP2MI** — Validasi lowongan langsung dengan data resmi BP2MI
+- **Native Share** — Bagikan hasil analisis langsung ke WhatsApp dalam satu klik
+- **Dashboard Analitik Publik** — Statistik scan anonim secara real-time
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Mode Input
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Pengguna dapat melakukan pemindaian melalui tiga cara:
+- Upload foto brosur (JPG, PNG, JPEG)
+- Copy-paste teks mentah dari chat atau postingan
+- Tempel URL iklan dari media sosial atau website
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Tech Stack
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Framework**: Vite + React
+- **Deployment**: Vercel
+- **AI Integration**: Gemini API 3.1 Flash Lite + Model MLP TensorFlow (via FastAPI)
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## Tim
+
+CC26-PSU306 — DBS Foundation Coding Camp 2026
